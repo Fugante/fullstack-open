@@ -1,3 +1,6 @@
 [submodule "part3/part3-courseinfo"]
 	path = part3/part3-courseinfo
 	url = git@github.com:Fugante/part3-courseinfo.git
+[submodule "part3/parte3-contactos"]
+	path = part3/parte3-contactos
+	url = git@github.com:Fugante/parte3-contactos.git
