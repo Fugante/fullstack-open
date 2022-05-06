@@ -14,11 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf build && cd ../../part2/courseinfo/ && npm run build && cp -r build ../../part3/courseinfo",
-    "deploy": "git switch heroku && git push heroku main",
-    "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && npm run deploy",
-    "logs:prod": "heroku logs --tail",
-    "test": "react-scripts test",
+    "build": "react-scripts build",
     "eject": "react-scripts eject",
     "server": "json-server -p3001 --watch db.json"
   },
@@ -42,5 +38,6 @@
   },
   "resolutions": {
     "mini-css-extract-plugin": "2.4.5"
-  }
+  },
+  "proxy": "http://localhost:3001"
 }
